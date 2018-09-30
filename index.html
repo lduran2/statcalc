@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'/>
+		<title>Calculate statistics</title>
+	</head>
+	<body>
+		<h1>Calculate statistics</h1>
+		<form id='stats' method='post'>
+			<section>
+				<h1>Input</h1>
+				<p><label>Data points<textarea name='input'></textarea></label></p>
+			</section>
+			<p><button type='submit'>Calculate</button></p>
+			<section>
+				<h1>Output</h1>
+				<ul>
+					<li><label>Cardinality<input readonly name='n'/></label></li>
+					<li><label>Algebraic Mean<input readonly name='avg'/></label></li>
+					<li><label>Standard deviation<input readonly name='stdev'/></label></li>
+					<li><label>Skewedness (Software method)<input readonly name='skew'/></label></li>
+				</ul>
+			</section>
+			<script type='text/javascript' src='calculate.js'></script>
+		</form>
+	</body>
+</html>
